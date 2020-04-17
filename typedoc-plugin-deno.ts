@@ -94,14 +94,14 @@ export class DenoPlugin extends ConverterComponent {
     if (i18nTag === undefined) return;
 
     const i18n = trim(i18nTag.text, '\n');
-    const firstLF = i18n.indexOf('\n');
+    const firstLF = i18n.indexOf('\n\n');
 
     if (firstLF === -1) {
       comment.shortText_i18n = i18n;
       comment.text_i18n = '';
     } else {
       comment.shortText_i18n = i18n.substr(0, firstLF);
-      comment.text_i18n = i18n.substr(firstLF + 1);
+      comment.text_i18n = i18n.substr(firstLF + 2);
     }
 
     removeTags(comment, '_i18n');
