@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "allowJs": true,
+    "module": "umd",
+    "target": "es2015",
+    "outDir": "./",
+    "experimentalDecorators": true
+  },
+  "files": ["typedoc-plugin-deno.ts"],
+  "exclude": ["node_modules"]
+}

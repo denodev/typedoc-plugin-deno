@@ -1,0 +1,45 @@
+{
+  "name": "typedoc-plugin-deno",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "typedocplugin",
+    "typedoc",
+    "deno"
+  ],
+  "homepage": "https://github.com/denodev/typedoc-plugin-deno",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/denodev/typedoc-plugin-deno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denodev/typedoc-plugin-deno/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "semver": "^7.3.2"
+  },
+  "peerDependencies": {
+    "typedoc": "^0.17.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.11.1",
+    "@types/semver": "^7.1.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "typedoc": "^0.17.4",
+    "typescript": "^3.8.3"
+  }
+}
