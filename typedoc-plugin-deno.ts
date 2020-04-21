@@ -113,13 +113,14 @@ function processi18nLineByLine(comment: Comment & I18nComment): void {
   }
 
   if (comment.text === '') {
+    // only one line
     comment.shortText_i18n = comment.text_line_i18n.shift();
     comment.text = comment.text_line_en.join('\n\n');
   } else {
+    // multiple lines
     comment.text_line_i18n.unshift(comment.text);
     comment.text = comment.text_line_en.join('\n\n');
   }
-  comment.text_line_en.pop();
 }
 
 function isSignature(reflection: Reflection): reflection is SignatureReflection {
