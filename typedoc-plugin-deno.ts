@@ -16,16 +16,16 @@ export class DenoPlugin extends ConverterComponent {
   /** Triggered when the converter has finished resolving a project. */
   private onEndResolve(context: Context) {
     for (let signature of Object.values(context.project.reflections)) {
-      if (!isSignature(signature)) {
-        continue;
-      }
-
       const comment = signature.comment as Comment & I18nComment;
       if (!comment) {
         continue;
       }
 
       processi18nLineByLine(comment);
+
+      if (!isSignature(signature)) {
+        continue;
+      }
 
       if (comment && comment.hasTag('returns_i18n')) {
         comment.returns_i18n = comment.getTag('returns_i18n')!.text;
