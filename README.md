@@ -13,7 +13,7 @@ Example:
 ```ts
 /** This comment _supports_ [Markdown](https://marked.js.org/).
  *
- * @_i18n 这是一个中文注释，_支持_ [Markdown](https://marked.js.org/)。
+ * @i18n 这是一个中文注释，_支持_ [Markdown](https://marked.js.org/)。
  *
  * @param text  Comment for parameter ´text´.
  * @param_i18n text  参数 ´text´ 的中文注释。
@@ -23,10 +23,10 @@ function doSomething(target: any, text: string): number;
 
 By default, this plugin processes the following tags:
 
-- [x] `@_i18n`
-- [ ] `@param_i18n` need help
-- [ ] `@typeParam_i18n` need help
-- [ ] `@return(s)_i18n` need help
+- [x] `@i18n`
+- [x] `@param_i18n`
+- [x] `@typeParam_i18n`
+- [x] `@returns_i18n`
 - [ ] `@event_i18n` need help
 
 ### Installing
