@@ -113,14 +113,15 @@ function processi18nLineByLine(comment: Comment & I18nComment): void {
   }
 
   if (comment.text === '') {
-    // only one line
+    // shortText has been translated
     comment.shortText_i18n = comment.text_line_i18n.shift();
     comment.text = comment.text_line_en.join('\n\n');
   } else {
-    // multiple lines
-    comment.text_line_i18n.unshift(comment.text);
+    comment.text_line_en.unshift(comment.text);
     comment.text = comment.text_line_en.join('\n\n');
   }
+
+  comment.text_line_i18n.push('');
 }
 
 function isSignature(reflection: Reflection): reflection is SignatureReflection {
