@@ -26,20 +26,20 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "semver": "^7.3.2"
   },
   "peerDependencies": {
     "typedoc": "^0.17.4"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.149",
-    "@types/node": "^13.11.1",
-    "@types/semver": "^7.1.0",
+    "@types/lodash": "^4.14.157",
+    "@types/node": "^14.0.23",
+    "@types/semver": "^7.3.1",
     "husky": "^4.2.5",
-    "prettier": "^2.0.4",
+    "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "typedoc": "^0.17.4",
+    "typedoc": "^0.17.8",
     "typescript": "^3.8.3"
   }
 }
