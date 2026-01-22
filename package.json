@@ -26,7 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "semver": "^7.5.2"
   },
   "peerDependencies": {
