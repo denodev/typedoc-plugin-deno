@@ -19,7 +19,7 @@
   "homepage": "https://github.com/denodev/typedoc-plugin-deno",
   "repository": {
     "type": "git",
-    "url": "git://github.com/denodev/typedoc-plugin-deno.git"
+    "url": "git+https://github.com/denodev/typedoc-plugin-deno.git"
   },
   "bugs": {
     "url": "https://github.com/denodev/typedoc-plugin-deno/issues"
